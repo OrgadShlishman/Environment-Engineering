@@ -25,6 +25,7 @@ Follow the provided Jupyter Notebook to replicate the code and workflow.
 
 Clone the YOLOv5 repository:
 
+### 1.1 Setting up the environment
 ```bash
 git clone https://github.com/ultralytics/yolov5.git
 
@@ -33,9 +34,12 @@ import torch
 from PIL import Image, ImageFilter
 !git clone https://github.com/ultralytics/yolov5.git
 
+```
 
+### 1.2 Loading YOLO Neural Network
+```bash
 model = torch.hub.load('ultralytics/yolov5', 'yolov5s')  # For larger models, use 'yolov5m', 'yolov5l', or 'yolov5x'
-
+```
 
 def sharpen_image(image_path):
     """
